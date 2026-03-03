@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contato | Waterflows</title>
+  <meta name="description" content="Fale com especialista, solicite proposta e envie mensagem via e-mail ou WhatsApp." />
+  <meta name="theme-color" content="#0B3A66" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+
+<body data-page="contato">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header" aria-label="Cabeçalho">
+    <div class="container header-inner">
+        <a class="brand" href="./index.html" aria-label="Ir para a Home Waterflows">
+          <img class="brand-logo" src="./assets/img/logo-water-flow.png" alt="Waterflows" />
+          <span class="brand-text">
+        </a>
+
+      <button class="nav-toggle" type="button" data-nav-toggle aria-label="Abrir menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <nav class="site-nav" data-nav aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a href="./index.html" data-page="home">Home</a></li>
+          <li><a href="./solucoes.html" data-page="solucoes">Soluções</a></li>
+          <li><a href="./aplicacoes.html" data-page="aplicacoes">Aplicações</a></li>
+          <li><a href="./produtos.html" data-page="produtos">Produtos</a></li>
+          <li><a href="./sustentabilidade.html" data-page="sustentabilidade">Sustentabilidade</a></li>
+          <li><a href="./sobre.html" data-page="sobre">Sobre Nós</a></li>
+          <li><a href="./contato.html" data-page="contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div data-nav-overlay hidden style="position:fixed; inset:0; background:rgba(6,35,61,0.25); z-index:900;"></div>
+
+  <main id="conteudo">
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb">Home / Contato</div>
+        <h1>Contato</h1>
+        <p class="lead">Envie uma mensagem com seu cenário e retornamos com o próximo passo.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Formulário e dados">
+      <div class="container contact-grid">
+        <div class="card" aria-label="Formulário de contato">
+          <h2 style="margin:0 0 10px 0; font-size:18px; color:#06233D;">Enviar mensagem</h2>
+
+          <!-- ✅ id no form para JS -->
+          <form class="form" id="contactForm" data-contact-form autocomplete="on">
+            <div class="field">
+              <label for="nome">Nome</label>
+              <input id="nome" name="nome" type="text" autocomplete="name" placeholder="Seu nome" required />
+            </div>
+
+            <div class="field">
+              <label for="empresa">Empresa</label>
+              <input id="empresa" name="empresa" type="text" placeholder="Nome da empresa" />
+            </div>
+
+            <div class="field">
+              <label for="email">E-mail</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="voce@empresa.com" required />
+            </div>
+
+            <div class="field">
+              <label for="telefone">Telefone</label>
+              <input id="telefone" name="telefone" type="tel" autocomplete="tel" placeholder="(xx) xxxxx-xxxx" />
+            </div>
+
+            <div class="field">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" placeholder="Descreva o cenário, objetivo e restrições do site." required></textarea>
+              <div class="helper">Escolha abaixo: E-mail ou WhatsApp. A mensagem é gerada automaticamente.</div>
+            </div>
+
+            <div class="hero-actions">
+              <!-- ✅ era submit; agora é button -->
+              <button class="btn btn-primary" id="btnEmail" type="button">Enviar por e-mail</button>
+
+              <!-- ✅ era link fixo; agora é button com JS -->
+              <button class="btn" id="btnWhats" type="button">WhatsApp</button>
+            </div>
+          </form>
+        </div>
+
+        <aside class="card" aria-label="Dados de contato">
+          <h2 style="margin:0 0 10px 0; font-size:18px; color:#06233D;">Canais</h2>
+
+          <div class="grid" style="gap:10px;">
+            <div class="card" style="padding:12px;">
+              <h3 style="margin:0 0 4px 0;">E-mail</h3>
+              <p style="margin:0; color:#667085;">
+                <a href="mailto:A_CONFIRMAR@waterflows.com.br">A_CONFIRMAR@waterflows.com.br</a>
+              </p>
+            </div>
+
+            <div class="card" style="padding:12px;">
+              <h3 style="margin:0 0 4px 0;">Telefone</h3>
+              <p style="margin:0; color:#667085;">
+                <a href="tel:+55XXXXXXXXXXX">+55 XX XXXXX-XXXX (A confirmar)</a>
+              </p>
+            </div>
+
+            <div class="card" style="padding:12px;">
+              <h3 style="margin:0 0 4px 0;">Endereço</h3>
+              <p style="margin:0; color:#667085;">A confirmar</p>
+            </div>
+
+            <div class="card" style="padding:12px;">
+              <h3 style="margin:0 0 8px 0;">Mapa</h3>
+              <img src="./assets/img/placeholder.svg" alt="Mapa placeholder" loading="lazy" />
+              <p class="helper" style="margin-top:8px;">Substitua por embed do Google Maps quando o endereço estiver definido.</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-label="Rodapé">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <div>
+              <div class="footer-title">Waterflows</div>
+              <div class="footer-muted">Soluções para água, solo e meio ambiente.</div>
+            </div>
+          </div>
+          <div class="badge">Atuação técnica • Mineração e infraestrutura</div>
+        </div>
+
+        <div class="footer-links">
+          <strong style="color:#fff;">Menu</strong>
+          <a href="./solucoes.html">Soluções</a>
+          <a href="./aplicacoes.html">Aplicações</a>
+          <a href="./produtos.html">Produtos</a>
+          <a href="./contato.html">Contato</a>
+        </div>
+
+        <div class="footer-links" aria-label="Links institucionais">
+          <strong class="footer-h">Institucional</strong>
+          <a href="./politica-de-privacidade.html" aria-label="Política de Privacidade (placeholder)">Política de Privacidade</a>
+          <a href="./termos.html" aria-label="Termos de Uso (placeholder)">Termos de Uso</a>
+          <div class="social" aria-label="Redes sociais">
+            <a href="https://www.linkedin.com/company/waterflows-br/?originalSubdomain=br" aria-label="LinkedIn (placeholder)">LinkedIn</a>
+            <a href="https://www.instagram.com/waterflowsbioquimica/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Waterflows. Todos os direitos reservados.</span>
+        <span>Site estático (HTML/CSS/JS) • HostGator cPanel</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ano
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // ====== CONTATO: mailto + whatsapp com campos preenchidos ======
+    (function () {
+      // ✅ AJUSTE AQUI
+      const DEST_EMAIL = "A_CONFIRMAR@waterflows.com.br";
+      const DEST_WAPP  = "5511987007388"; // só números: 55 + DDD + número
+
+      const $ = (id) => document.getElementById(id);
+
+      function clean(v){ return (v || "").trim(); }
+
+      function getData(){
+        return {
+          nome: clean($("nome")?.value),
+          empresa: clean($("empresa")?.value),
+          email: clean($("email")?.value),
+          telefone: clean($("telefone")?.value),
+          mensagem: clean($("mensagem")?.value),
+        };
+      }
+
+      function validate(data){
+        if (!data.nome || !data.email || !data.mensagem) return false;
+        return true;
+      }
+
+      function buildText(data){
+        return [
+          "Contato pelo site — Waterflows",
+          "",
+          `Nome: ${data.nome || "-"}`,
+          `Empresa: ${data.empresa || "-"}`,
+          `E-mail: ${data.email || "-"}`,
+          `Telefone: ${data.telefone || "-"}`,
+          "",
+          "Mensagem:",
+          data.mensagem || "-"
+        ].join("\n");
+      }
+
+      function openEmail(){
+        const data = getData();
+        if (!validate(data)){
+          alert("Preencha pelo menos Nome, E-mail e Mensagem.");
+          return;
+        }
+        const subject = `Contato — ${data.empresa ? data.empresa + " — " : ""}${data.nome}`;
+        const body = buildText(data);
+        const mailto = `mailto:${encodeURIComponent(DEST_EMAIL)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.location.href = mailto;
+      }
+
+      function openWhats(){
+        const data = getData();
+        if (!validate(data)){
+          alert("Preencha pelo menos Nome, E-mail e Mensagem.");
+          return;
+        }
+        const text = buildText(data);
+        const url = `https://wa.me/${DEST_WAPP}?text=${encodeURIComponent(text)}`;
+        window.open(url, "_blank", "noopener,noreferrer");
+      }
+
+      // evita submit acidental
+      $("contactForm")?.addEventListener("submit", function(e){ e.preventDefault(); });
+
+      $("btnEmail")?.addEventListener("click", openEmail);
+      $("btnWhats")?.addEventListener("click", openWhats);
+    })();
+  </script>
+
+  <script src="./assets/js/main.js" defer></script>
+</body>
+</html>

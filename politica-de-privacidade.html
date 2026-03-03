@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Política de Privacidade | Waterflows</title>
+  <meta name="description" content="Política de Privacidade da Waterflows — como coletamos, usamos e protegemos dados pessoais conforme a LGPD." />
+
+  <!-- Recomendado: use o MESMO <link> do seu styles.css global.
+       Se quiser usar seu styles.css, remova o <style> abaixo e mantenha o link. -->
+  <!-- <link rel="stylesheet" href="./assets/css/styles.css"> -->
+
+  <style>
+    :root{
+      --bg:#FFFFFF;
+      --bg-soft:#F7F9FC;
+      --text:#344054;
+      --muted:#667085;
+      --border:#E6EAF0;
+      --brand:#0B3A66;
+      --brand-2:#06233D;
+      --radius:14px;
+      --shadow:0 10px 30px rgba(6,35,61,0.10);
+      --container:1120px;
+      --h1:28px;
+      --h2:22px;
+      --h3:16px;
+      --p:15px;
+      --section-y:28px;
+    }
+
+    *{ box-sizing:border-box; }
+    html{ scroll-behavior:smooth; }
+    body{
+      margin:0;
+      font-family: Inter, Lato, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--text);
+      background:var(--bg);
+      line-height:1.55;
+    }
+    a{ color:inherit; text-decoration:none; }
+    img{ max-width:100%; display:block; height:auto; }
+    :focus-visible{ outline:3px solid rgba(11,58,102,0.35); outline-offset:3px; border-radius:10px; }
+
+    .container{ width:100%; max-width:var(--container); margin:0 auto; padding:0 16px; }
+
+    /* Header */
+    .site-header{
+      position:sticky; top:0; z-index:1000;
+      background:rgba(255,255,255,0.92);
+      backdrop-filter: blur(10px);
+      border-bottom:1px solid var(--border);
+    }
+    .header-inner{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:12px; padding:12px 0;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px;
+      min-width:180px;
+    }
+    .brand-logo{
+      width:170px; height:52px; object-fit:contain;
+    }
+    .nav{
+      display:flex; gap:10px; align-items:center;
+      flex-wrap:wrap;
+    }
+    .nav a{
+      padding:10px 12px;
+      border-radius:12px;
+      border:1px solid transparent;
+      color:var(--brand-2);
+      font-weight:700;
+    }
+    .nav a:hover{
+      background:var(--bg-soft);
+      border-color:var(--border);
+    }
+    .nav a.active{
+      background:rgba(11,58,102,0.08);
+      border-color:rgba(11,58,102,0.18);
+    }
+
+    /* Hero */
+    .legal-hero{
+      padding:36px 0 18px 0;
+      background:
+        radial-gradient(900px 350px at 20% 0%, rgba(11,58,102,0.10), transparent 60%),
+        radial-gradient(900px 350px at 80% 0%, rgba(6,35,61,0.08), transparent 60%);
+    }
+    h1{
+      margin:0 0 10px 0;
+      font-size:var(--h1);
+      line-height:1.15;
+      letter-spacing:-0.3px;
+      color:var(--brand-2);
+    }
+    .lead{
+      margin:0;
+      color:var(--muted);
+      max-width:70ch;
+      font-size:var(--p);
+    }
+    .meta-row{
+      margin-top:14px;
+      display:flex; flex-wrap:wrap; gap:10px;
+      align-items:center;
+      color:rgba(52,64,84,0.85);
+      font-size:13px;
+    }
+    .pill{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:999px;
+      background:rgba(11,58,102,0.06);
+      border:1px solid rgba(11,58,102,0.12);
+      color:var(--brand-2);
+      font-weight:800;
+    }
+
+    /* Layout */
+    .section{ padding:var(--section-y) 0; }
+    .legal-grid{
+      display:grid; gap:16px;
+      align-items:start;
+    }
+
+    .card{
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      background:#fff;
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .card-inner{ padding:16px; }
+
+    /* TOC */
+    .toc{
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      background: var(--bg-soft);
+    }
+    .toc .card-inner{ padding:14px; }
+    .toc-title{
+      margin:0 0 10px 0;
+      font-size:14px;
+      font-weight:900;
+      color:var(--brand-2);
+      letter-spacing:0.2px;
+    }
+    .toc a{
+      display:block;
+      padding:10px 10px;
+      border-radius:12px;
+      border:1px solid transparent;
+      color:var(--brand-2);
+      font-weight:700;
+      font-size:13px;
+    }
+    .toc a:hover{
+      background:#fff;
+      border-color:var(--border);
+    }
+
+    /* Content */
+    .legal h2{
+      margin:0 0 10px 0;
+      font-size:var(--h2);
+      color:var(--brand-2);
+      letter-spacing:-0.2px;
+    }
+    .legal h3{
+      margin:18px 0 8px 0;
+      font-size:var(--h3);
+      color:var(--brand-2);
+      letter-spacing:-0.1px;
+    }
+    .legal p{ margin:0 0 12px 0; color:var(--text); }
+    .legal ul{
+      margin:0 0 14px 0;
+      padding-left:18px;
+      color:var(--text);
+    }
+    .legal li{ margin:6px 0; }
+    .muted{ color:var(--muted); }
+
+    .info-grid{
+      display:grid; gap:12px;
+      grid-template-columns: 1fr;
+      margin-top:12px;
+    }
+    .info{
+      border:1px solid rgba(6,35,61,0.10);
+      background: rgba(11,58,102,0.03);
+      border-radius: 12px;
+      padding: 12px;
+    }
+    .info b{ color:var(--brand-2); }
+
+    .notice{
+      margin-top:14px;
+      padding:12px;
+      border-radius:12px;
+      border:1px solid rgba(11,58,102,0.16);
+      background: rgba(11,58,102,0.05);
+      color: var(--brand-2);
+      font-size: 14px;
+    }
+
+    /* Footer */
+    .site-footer{
+      padding:24px 0;
+      background:#071B2E;
+      color:rgba(255,255,255,0.86);
+      margin-top: 24px;
+    }
+    .footer-grid{ display:grid; gap:16px; }
+    .footer-brand{ display:grid; gap:10px; }
+    .footer-logo{
+      width:170px; height:52px; object-fit:contain;
+      filter: brightness(1.05);
+    }
+    .footer-h{ color:#fff; font-weight:800; font-size:13px; margin:0 0 8px 0; }
+    .footer-links{ display:grid; gap:8px; }
+    .footer-links a{ color:rgba(255,255,255,0.82); font-size:13px; }
+    .footer-links a:hover{ color:#fff; text-decoration:underline; }
+    .footer-bottom{
+      margin-top:10px; padding-top:12px;
+      border-top:1px solid rgba(255,255,255,0.12);
+      display:flex; flex-wrap:wrap; gap:10px;
+      justify-content:space-between; align-items:center;
+      font-size:12px;
+      color:rgba(255,255,255,0.62);
+    }
+    .foot-note{
+      display:flex; gap:8px; align-items:center; flex-wrap:wrap;
+    }
+    .badge{
+      display:inline-flex; align-items:center;
+      padding:7px 10px;
+      border-radius:999px;
+      background: rgba(255,255,255,0.08);
+      border:1px solid rgba(255,255,255,0.12);
+      color: rgba(255,255,255,0.82);
+      font-size:12px;
+      font-weight:700;
+    }
+
+    /* Responsive */
+    @media (min-width: 768px){
+      :root{ --h1:34px; --h2:26px; --section-y:36px; }
+      .legal-grid{ grid-template-columns: 340px 1fr; gap:18px; }
+      .footer-grid{ grid-template-columns: 1.2fr 0.8fr 0.8fr; }
+      .info-grid{ grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 767px){
+      .nav{ display:none; } /* simples: evita header poluído; você pode reaproveitar seu menu mobile aqui */
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header (sem “Pular para o conteúdo”) -->
+  <header class="site-header" aria-label="Topo do site">
+    <div class="container">
+      <div class="header-inner">
+        <a class="brand" href="./index.html" aria-label="Voltar para Home">
+          <!-- Troque o src para o caminho real do seu logo -->
+          <img class="brand-logo" src="./assets/img/logo-water-flow.png" alt="Waterflows" />
+        </a>
+
+        <nav class="nav" aria-label="Navegação principal">
+          <a href="./index.html">Home</a>
+          <a href="./solucoes.html">Soluções</a>
+          <a href="./aplicacoes.html">Aplicações</a>
+          <a href="./produtos.html">Produtos</a>
+          <a class="active" href="./politica-de-privacidade.html" aria-current="page">Privacidade</a>
+          <a href="./contato.html">Contato</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="legal-hero" aria-label="Política de Privacidade">
+      <div class="container">
+        <h1>Política de Privacidade</h1>
+        <p class="lead">
+          Esta Política descreve como a <b>Waterflows</b> coleta, utiliza, armazena e protege dados pessoais,
+          em conformidade com a <b>LGPD (Lei nº 13.709/2018)</b>.
+        </p>
+
+        <div class="meta-row" aria-label="Metadados do documento">
+          <span class="pill">Versão: 1.0</span>
+          <span class="pill">Atualizado em: 02/03/2026</span>
+          <span class="pill">Contato LGPD: {{email@waterflows.com.br}}</span>
+        </div>
+
+        <div class="notice">
+          <b>Nota:</b> Se você enviar uma solicitação técnica/comercial, podemos usar seus dados para responder,
+          elaborar proposta e manter histórico de relacionamento, conforme as bases legais da LGPD.
+        </div>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <section class="section" aria-label="Conteúdo da Política">
+      <div class="container">
+        <div class="legal-grid">
+
+          <!-- TOC -->
+          <aside class="toc card" aria-label="Sumário">
+            <div class="card-inner">
+              <p class="toc-title">Sumário</p>
+              <a href="#quem-somos">1. Quem somos</a>
+              <a href="#dados-coletados">2. Quais dados coletamos</a>
+              <a href="#finalidades">3. Para que usamos os dados</a>
+              <a href="#bases-legais">4. Bases legais (LGPD)</a>
+              <a href="#compartilhamento">5. Compartilhamento</a>
+              <a href="#armazenamento">6. Armazenamento e segurança</a>
+              <a href="#direitos">7. Direitos do titular</a>
+              <a href="#cookies">8. Cookies e tecnologias</a>
+              <a href="#contato">9. Contato e DPO</a>
+              <a href="#alteracoes">10. Alterações</a>
+            </div>
+          </aside>
+
+          <!-- Legal Body -->
+          <article class="legal card" aria-label="Texto da Política">
+            <div class="card-inner">
+
+              <h2 id="quem-somos">1. Quem somos</h2>
+              <p>
+                A <b>Waterflows</b> Bioquimica do Brasil Ltda - ME , CNPJ 10.555.298/0001-50, com sede em Mogi Mirim - SP,
+                atua com soluções aplicadas para água, solo e meio ambiente.
+              </p>
+
+              <div class="info-grid" aria-label="Dados da empresa">
+                <div class="info"><b>Empresa:</b> Waterflows Bioquimica do Brasil Ltda - ME</div>
+                <div class="info"><b>CNPJ:</b> 10.555.298/0001-50</div>
+                <div class="info"><b>Endereço:</b> Rua Beatriz de Freitas Puggina, 101 - Loteamento Industrial Martim Park, Mogi Mirim - SP, CEP 13815-750</div>
+                <div class="info"><b>E-mail:</b> {{contato@waterflows.com.br}}</div>
+              </div>
+
+              <h2 id="dados-coletados">2. Quais dados coletamos</h2>
+              <p>Podemos coletar dados pessoais nas seguintes situações:</p>
+              <ul>
+                <li><b>Formulários:</b> nome, e-mail, telefone, empresa, cargo, mensagem.</li>
+                <li><b>Contato via WhatsApp:</b> número, nome de perfil e conteúdo das mensagens.</li>
+                <li><b>Navegação:</b> endereço IP, páginas visitadas, tipo de dispositivo/navegador, cookies.</li>
+              </ul>
+              <p class="muted">
+                Não solicitamos dados sensíveis (ex.: saúde, religião, biometria). Caso sejam enviados espontaneamente,
+                trataremos com cuidado e apenas na medida necessária.
+              </p>
+
+              <h2 id="finalidades">3. Para que usamos os dados</h2>
+              <ul>
+                <li>Responder solicitações e dúvidas.</li>
+                <li>Elaborar e enviar propostas técnicas/comerciais.</li>
+                <li>Manter histórico de relacionamento e atendimento.</li>
+                <li>Melhorar o site e a experiência do usuário.</li>
+                <li>Cumprir obrigações legais/regulatórias e prevenir fraudes.</li>
+              </ul>
+
+              <h2 id="bases-legais">4. Bases legais (LGPD)</h2>
+              <p>Tratamos dados com base em uma ou mais hipóteses legais, como:</p>
+              <ul>
+                <li><b>Consentimento</b> (quando aplicável).</li>
+                <li><b>Execução de contrato</b> ou procedimentos preliminares (ex.: pedido de proposta).</li>
+                <li><b>Legítimo interesse</b> (ex.: segurança, melhoria do site, relacionamento B2B).</li>
+                <li><b>Cumprimento de obrigação legal</b>.</li>
+              </ul>
+
+              <h2 id="compartilhamento">5. Compartilhamento</h2>
+              <p>Podemos compartilhar dados com fornecedores estritamente necessários, por exemplo:</p>
+              <ul>
+                <li><b>Hospedagem e infraestrutura</b> (servidores, CDN, DNS).</li>
+                <li><b>Ferramentas de comunicação</b> (e-mail e WhatsApp/Meta).</li>
+                <li><b>Analytics</b> (se habilitado) para estatísticas de uso do site.</li>
+              </ul>
+              <p class="muted">
+                Não vendemos dados pessoais. Se houver transferência internacional (ex.: provedores globais),
+                adotaremos medidas contratuais e de segurança apropriadas.
+              </p>
+
+              <h2 id="armazenamento">6. Armazenamento e segurança</h2>
+              <p>
+                Adotamos medidas técnicas e administrativas para proteger dados contra acesso não autorizado,
+                perda, alteração ou divulgação indevida.
+              </p>
+              <ul>
+                <li>Controle de acesso e privilégios.</li>
+                <li>Monitoramento e boas práticas de segurança.</li>
+                <li>Retenção pelo tempo necessário para cumprir as finalidades e obrigações legais.</li>
+              </ul>
+
+              <h2 id="direitos">7. Direitos do titular</h2>
+              <p>Você pode solicitar, a qualquer momento:</p>
+              <ul>
+                <li>Confirmação de tratamento e acesso.</li>
+                <li>Correção de dados incompletos, inexatos ou desatualizados.</li>
+                <li>Anonimização, bloqueio ou eliminação (quando aplicável).</li>
+                <li>Portabilidade (quando aplicável).</li>
+                <li>Revogação de consentimento (quando aplicável).</li>
+              </ul>
+
+              <h2 id="cookies">8. Cookies e tecnologias</h2>
+              <p>
+                Podemos usar cookies para funcionamento, estatísticas e melhoria do site. Você pode gerenciar cookies
+                no seu navegador. Se você usar analytics, descreva aqui quais cookies são usados.
+              </p>
+
+              <h2 id="contato">9. Contato e DPO</h2>
+              <p>
+                Para exercer direitos ou tirar dúvidas sobre privacidade, contate:
+              </p>
+              <ul>
+                <li><b>E-mail:</b> {{email@waterflows.com.br}}</li>
+                <li><b>Responsável/DPO (se aplicável):</b> {{Nome do responsável}}</li>
+              </ul>
+
+              <h2 id="alteracoes">10. Alterações desta Política</h2>
+              <p>
+                Podemos atualizar esta Política periodicamente. A versão vigente estará sempre disponível nesta página,
+                com a data de atualização.
+              </p>
+
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (com logo no lugar do texto “Waterflows”) -->
+  <footer class="site-footer" aria-label="Rodapé">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <!-- Troque o src para o caminho real do seu logo -->
+        <span>© <span id="year"></span> Waterflows. Todos os direitos reservados.</span>
+          <div class="muted" style="color:rgba(255,255,255,0.68); font-size:13px;">
+            Soluções para água, solo e meio ambiente.
+          </div>
+          <div class="badge">Atuação técnica • Mineração e infraestrutura</div>
+        </div>
+
+        <div>
+          <p class="footer-h">Menu</p>
+          <div class="footer-links">
+            <a href="./solucoes.html">Soluções</a>
+            <a href="./aplicacoes.html">Aplicações</a>
+            <a href="./produtos.html">Produtos</a>
+            <a href="./contato.html">Contato</a>
+          </div>
+        </div>
+
+        <div class="footer-links" aria-label="Links institucionais">
+          <strong class="footer-h">Institucional</strong>
+          <a href="./politica-de-privacidade.html" aria-label="Política de Privacidade (placeholder)">Política de Privacidade</a>
+          <a href="./termos.html" aria-label="Termos de Uso (placeholder)">Termos de Uso</a>
+          <div class="social" aria-label="Redes sociais">
+            <a href="https://www.linkedin.com/company/waterflows-br/?originalSubdomain=br" aria-label="LinkedIn (placeholder)">LinkedIn</a>
+            <a href="https://www.instagram.com/waterflowsbioquimica/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </div>
+      </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>© {{2026}} Waterflows. Todos os direitos reservados.</div>
+
+        <!-- Ideia melhor que “Site estático...” -->
+        <div class="foot-note">
+          <span class="badge">Atendimento: {{contato@waterflows.com.br}}</span>
+          <span class="badge">Resposta em até {{24h úteis}}</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
