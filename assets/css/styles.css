@@ -1959,12 +1959,10 @@ textarea{ min-height: 140px; resize: vertical; }
   }
 }
 
-@media (min-width: 768px){
-  .solution-split--reverse .solution-media-card{
-    order: 1;
-  }
-
-  .solution-split--reverse .solution-copy{
-    order: 2;
+/* ===== Página de solução com 4 benefícios ===== */
+@media (min-width: 1024px){
+  .solution-benefits-grid--4{
+    grid-template-columns: repeat(4, minmax(0,1fr));
   }
 }
+
