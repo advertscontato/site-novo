@@ -30,7 +30,6 @@
           <li><a href="./index.html" data-page="home">Home</a></li>
           <li><a href="./solucoes.html" data-page="solucoes">Soluções</a></li>
           <li><a href="./aplicacoes.html" data-page="aplicacoes">Aplicações</a></li>
-          <li><a href="./produtos.html" data-page="produtos">Produtos</a></li>
           <li><a href="./sustentabilidade.html" data-page="sustentabilidade">Sustentabilidade</a></li>
           <li><a href="./sobre.html" data-page="sobre">Sobre Nós</a></li>
           <li><a href="./contato.html" data-page="contato">Contato</a></li>
@@ -40,52 +39,141 @@
     </div>
   </header>
 
-  <div data-nav-overlay hidden style="position:fixed; inset:0; background:rgba(6,35,61,0.25); z-index:900;"></div>
+<section class="section" aria-label="Aplicações">
+  <div class="container">
+    <div class="section-head center">
+      <h2>Aplicações</h2>
+      <p>Atuação prática em cenários operacionais de mineração, infraestrutura e processos hídricos.</p>
+    </div>
 
-  <main id="conteudo">
-    <section class="page-hero">
-      <div class="container">
-        <div class="breadcrumb">Home / Aplicações</div>
-        <h1>Aplicações</h1>
-        <p class="lead">Atuação orientada ao ambiente operacional e à criticidade do processo.</p>
-      </div>
-    </section>
+    <div class="apps-media-grid">
 
-    <section class="section" aria-label="Segmentos">
-      <div class="container">
-        <div class="grid cols-2">
-          <article class="card">
-            <h3>Mineração</h3>
-            <p>Vias, pátios, pilhas e pontos críticos com foco em segurança e continuidade operacional.</p>
-          </article>
-          <article class="card">
-            <h3>Infraestrutura</h3>
-            <p>Obras, acessos e áreas de movimentação com necessidade de controle de poeira e estabilidade.</p>
-          </article>
-          <article class="card">
-            <h3>Efluentes</h3>
-            <p>Cenários com demanda de clarificação, separação sólido-líquido e suporte ao processo.</p>
-          </article>
-          <article class="card">
-            <h3>Indústria/Agronegócio</h3>
-            <p>Ambientes com particulados e necessidade de eficiência e conformidade.</p>
-          </article>
+      <article class="app-media-card">
+        <div class="app-media">
+          <img src="./assets/img/mineração.png"
+               alt="Mineração: vias internas, pátios e taludes"
+               loading="lazy" decoding="async">
         </div>
 
-        <div class="section" style="padding-bottom:0;">
-          <div class="cta">
-            <div>
-              <h2>Solicite uma avaliação técnica inicial</h2>
-              <p>Descreva o cenário e retornamos com orientação objetiva.</p>
-            </div>
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="./contato.html">Solicitar proposta</a>
-              <a class="btn" href="./contato.html">Falar com especialista</a>
-            </div>
-          </div>
+        <div class="app-media-overlay"></div>
+
+        <div class="app-media-top">
+          <span class="app-chip">Mineração</span>
+          <span class="app-miniicon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M4 20h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M6 20v-5a6 6 0 0 1 12 0v5" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M12 9V6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
         </div>
 
-      </div>
+        <div class="app-media-bottom">
+          <h3>Ambientes de alta demanda operacional</h3>
+          <ul class="app-media-list">
+            <li>Vias internas</li>
+            <li>Pátios</li>
+            <li>Taludes</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="app-media-card">
+        <div class="app-media">
+          <img src="./assets/img/infraestrutura.jpg"
+               alt="Infraestrutura: rodovias, ferrovias e subleito"
+               loading="lazy" decoding="async">
+        </div>
+
+        <div class="app-media-overlay"></div>
+
+        <div class="app-media-top">
+          <span class="app-chip">Infraestrutura</span>
+          <span class="app-miniicon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M3 20h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M6 20V9l6-4 6 4v11" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M9 13h6M9 16h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+        </div>
+
+        <div class="app-media-bottom">
+          <h3>Estabilidade e integridade de base</h3>
+          <ul class="app-media-list">
+            <li>Rodovias</li>
+            <li>Ferrovias</li>
+            <li>Subleito</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="app-media-card">
+        <div class="app-media">
+          <img src="./assets/img/efluentes.png"
+               alt="Efluentes: tratamento, espessamento e recuperação de água"
+               loading="lazy" decoding="async">
+        </div>
+
+        <div class="app-media-overlay"></div>
+
+        <div class="app-media-top">
+          <span class="app-chip">Efluentes</span>
+          <span class="app-miniicon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M12 2s6 6 6 11a6 6 0 0 1-12 0c0-5 6-11 6-11Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M9 14c1 1 2 1 3 0 1-1 2-1 3 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+        </div>
+
+        <div class="app-media-bottom">
+          <h3>Controle e eficiência no processo hídrico</h3>
+          <ul class="app-media-list">
+            <li>Tratamento</li>
+            <li>Espessamento</li>
+            <li>Recuperação de água</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="app-media-card">
+        <div class="app-media">
+          <img src="./assets/img/industria.png"
+               alt="Indústria e agronegócio: pátios, acessos e áreas de circulação"
+               loading="lazy" decoding="async">
+        </div>
+
+        <div class="app-media-overlay"></div>
+
+        <div class="app-media-top">
+          <span class="app-chip">Indústria / Agronegócio</span>
+          <span class="app-miniicon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M4 20V10l6 3V7l10 5v8H4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M8 20v-4M12 20v-6M16 20v-3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+        </div>
+
+        <div class="app-media-bottom">
+          <h3>Redução de poeira e controle de acesso</h3>
+          <ul class="app-media-list">
+            <li>Pátios</li>
+            <li>Acessos</li>
+            <li>Áreas de circulação</li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="section-actions">
+      <a class="btn btn-primary" href="./aplicacoes.html">Ver aplicações</a>
+      <a class="btn" href="./contato.html">Solicitar proposta</a>
+    </div>
+  </div>
+</section>
     </section>
   </main>
 
@@ -107,7 +195,6 @@
           <strong style="color:#fff;">Menu</strong>
           <a href="./solucoes.html">Soluções</a>
           <a href="./aplicacoes.html">Aplicações</a>
-          <a href="./produtos.html">Produtos</a>
           <a href="./contato.html">Contato</a>
         </div>
 

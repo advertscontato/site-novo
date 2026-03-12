@@ -30,7 +30,6 @@
           <li><a href="./index.html" data-page="home">Home</a></li>
           <li><a href="./solucoes.html" data-page="solucoes">Soluções</a></li>
           <li><a href="./aplicacoes.html" data-page="aplicacoes">Aplicações</a></li>
-          <li><a href="./produtos.html" data-page="produtos">Produtos</a></li>
           <li><a href="./sustentabilidade.html" data-page="sustentabilidade">Sustentabilidade</a></li>
           <li><a href="./sobre.html" data-page="sobre">Sobre Nós</a></li>
           <li><a href="./contato.html" data-page="contato">Contato</a></li>
@@ -40,64 +39,76 @@
 
   </header>
 
-  <div data-nav-overlay hidden style="position:fixed; inset:0; background:rgba(6,35,61,0.25); z-index:900;"></div>
+  <section class="section" aria-label="Soluções">
+  <div class="container">
+    <div class="section-head center">
+      <h2>Nossas Soluções</h2>
+      <p>Estrutura técnica para reduzir variabilidade operacional, apoiar conformidade e manter continuidade em campo.</p>
+    </div>
 
-  <main id="conteudo">
-    <section class="page-hero" aria-label="Cabeçalho da página">
-      <div class="container">
-        <div class="breadcrumb">Home / Soluções</div>
-        <h1>Soluções</h1>
-        <p class="lead">Portfólio técnico para controle de poeira, solo e processos hídricos com suporte em campo.</p>
-      </div>
-    </section>
+    <div class="solutions-home-grid">
 
-    <section class="section" aria-label="Cards de soluções">
-      <div class="container">
-        <div class="grid cols-2">
-          <article class="card">
-            <h3>Selagem e estabilização de solo</h3>
-            <p>Soluções para vias, pátios e áreas operacionais, com foco em controle de particulados e estabilidade.</p>
-          </article>
-          <article class="card">
-            <h3>Tratamento e espessamento</h3>
-            <p>Apoio ao desempenho de processos hídricos, clarificação e espessamento.</p>
-          </article>
-          <article class="card">
-            <h3>Controle de poeira</h3>
-            <p>Estratégias de supressão e controle operacional para redução de emissões fugitivas.</p>
-          </article>
-          <article class="card">
-            <h3>Suporte técnico em campo</h3>
-            <p>Acompanhamento, orientação de aplicação e registro técnico.</p>
-          </article>
-        </div>
-
-        <div class="section-head" style="margin-top:18px;">
-          <h2>Como entregamos</h2>
-          <p>Fluxo padronizado para reduzir risco e manter previsibilidade.</p>
-        </div>
-
-        <div class="steps">
-          <div class="step"><div class="step-num">1</div><div><h3>Diagnóstico</h3><p>Levantamento do cenário e pontos críticos.</p></div></div>
-          <div class="step"><div class="step-num">2</div><div><h3>Plano</h3><p>Método, materiais e critérios de verificação.</p></div></div>
-          <div class="step"><div class="step-num">3</div><div><h3>Execução</h3><p>Aplicação orientada ao objetivo operacional.</p></div></div>
-          <div class="step"><div class="step-num">4</div><div><h3>Acompanhamento</h3><p>Suporte e ajustes quando aplicável.</p></div></div>
-        </div>
-
-        <div class="section" style="padding-bottom:0;">
-          <div class="cta">
-            <div>
-              <h2>Defina a solução correta para seu cenário</h2>
-              <p>Envie contexto e retornamos com o próximo passo.</p>
-            </div>
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="./contato.html">Solicitar proposta</a>
-              <a class="btn" href="./contato.html">Falar com especialista</a>
-            </div>
+      <article class="card feature-card solution-home-card">
+        <a class="solution-card-link" href="./controle-poeira-vias.html" aria-label="Ver solução de controle de poeira em vias">
+          <div class="feature-media" aria-hidden="true">
+            <img src="./assets/img/controle-poeira-vias.png" alt="" loading="lazy" decoding="async">
           </div>
-        </div>
+          <div class="feature-body">
+            <h3>Controle de poeira em vias</h3>
+            <p>Umectação eficiente com redução de consumo de água e maior intervalo entre aplicações.</p>
+          </div>
+        </a>
+      </article>
 
-      </div>
+      <article class="card feature-card solution-home-card">
+        <a class="solution-card-link" href="./protecao-taludes-pilhas.html" aria-label="Ver solução de proteção de taludes e pilhas">
+          <div class="feature-media" aria-hidden="true">
+            <img src="./assets/img/protecao-taludes-pilhas.png" alt="" loading="lazy" decoding="async">
+          </div>
+          <div class="feature-body">
+            <h3>Proteção de taludes e pilhas</h3>
+            <p>Selagem superficial para controle de poeira por ação eólica em taludes, bermas e pilhas.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="card feature-card solution-home-card">
+        <a class="solution-card-link" href="./estabilizacao-solo.html" aria-label="Ver solução de estabilização de solo">
+          <div class="feature-media" aria-hidden="true">
+            <img src="./assets/img/estabilizacao-solo.png" alt="" loading="lazy" decoding="async">
+          </div>
+          <div class="feature-body">
+            <h3>Estabilização de solo</h3>
+            <p>Reforço estrutural do solo utilizando o próprio material da via operacional, reduzindo manutenção e necessidade de material importado.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="card feature-card solution-home-card">
+        <a class="solution-card-link" href="./tratamento-efluentes-industriais.html" aria-label="Ver solução de tratamento de efluentes industriais">
+          <div class="feature-media" aria-hidden="true">
+            <img src="./assets/img/tratamento-efluentes-industriais.png" alt="" loading="lazy" decoding="async">
+          </div>
+          <div class="feature-body">
+            <h3>Tratamento de efluentes industriais</h3>
+            <p>Controle de turbidez e sólidos em suspensão com soluções seguras, inclusive em sistemas passivos.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="card feature-card solution-home-card">
+        <a class="solution-card-link" href="./tratamento-biologico-efluentes.html" aria-label="Ver solução de tratamento biológico de efluentes">
+          <div class="feature-media" aria-hidden="true">
+            <img src="./assets/img/tratamento-efluentes-biologicas.png" alt="" loading="lazy" decoding="async">
+          </div>
+          <div class="feature-body">
+            <h3>Tratamento biológico de efluentes</h3>
+            <p>Redução de gorduras, odores e entupimentos com tecnologia biológica enzimática.</p>
+          </div>
+        </a>
+      </article>
+
+    </div>
     </section>
   </main>
 
@@ -119,7 +130,6 @@
           <strong style="color:#fff;">Menu</strong>
           <a href="./solucoes.html">Soluções</a>
           <a href="./aplicacoes.html">Aplicações</a>
-          <a href="./produtos.html">Produtos</a>
           <a href="./contato.html">Contato</a>
         </div>
 

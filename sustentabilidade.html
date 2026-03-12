@@ -30,7 +30,6 @@
           <li><a href="./index.html" data-page="home">Home</a></li>
           <li><a href="./solucoes.html" data-page="solucoes">Soluções</a></li>
           <li><a href="./aplicacoes.html" data-page="aplicacoes">Aplicações</a></li>
-          <li><a href="./produtos.html" data-page="produtos">Produtos</a></li>
           <li><a href="./sustentabilidade.html" data-page="sustentabilidade">Sustentabilidade</a></li>
           <li><a href="./sobre.html" data-page="sobre">Sobre Nós</a></li>
           <li><a href="./contato.html" data-page="contato">Contato</a></li>
@@ -41,42 +40,86 @@
     </div>
   </header>
 
-  <div data-nav-overlay hidden style="position:fixed; inset:0; background:rgba(6,35,61,0.25); z-index:900;"></div>
+<section class="section sustain" aria-label="Sustentabilidade">
+  <div class="container">
+    <div class="section-head center sustain-head">
+      <h2>Sustentabilidade</h2>
+      <p>Eficiência operacional e conformidade ambiental com foco em continuidade de campo.</p>
+    </div>
 
-  <main id="conteudo">
-    <section class="page-hero">
-      <div class="container">
-        <div class="breadcrumb">Home / Sustentabilidade</div>
-        <h1>Sustentabilidade</h1>
-        <p class="lead">Controle operacional com foco em eficiência, redução de impacto e conformidade.</p>
-      </div>
-    </section>
+    <div class="sustain-grid" role="list">
 
-    <section class="section" aria-label="Pilares">
-      <div class="container">
-        <div class="grid cols-2">
-          <article class="card"><h3>Eficiência hídrica</h3><p>Melhor gestão do uso de água e apoio a processos com foco em estabilidade operacional.</p></article>
-          <article class="card"><h3>Redução de poeira</h3><p>Estratégias para reduzir emissões fugitivas e melhorar condições de operação.</p></article>
-          <article class="card"><h3>Menor manutenção de vias</h3><p>Ações para reduzir retrabalho e melhorar estabilidade em acessos e pátios.</p></article>
-          <article class="card"><h3>Conformidade ambiental</h3><p>Suporte ao controle e registro técnico conforme exigências aplicáveis.</p></article>
-          <article class="card"><h3>Rastreamento operacional</h3><p>Registro de aplicação e acompanhamento para apoiar tomada de decisão.</p></article>
-          <article class="card"><h3>Execução assistida</h3><p>Orientação e suporte técnico para manter consistência em campo.</p></article>
+      <article class="sustain-card" role="listitem">
+        <div class="sustain-ico" aria-hidden="true">
+          <!-- gota -->
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M12 2s6 6 6 11a6 6 0 0 1-12 0c0-5 6-11 6-11Z"
+              stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          </svg>
         </div>
+        <h3>Eficiência hídrica</h3>
+        <p>Melhor recuperação e controle do processo para reduzir consumo e perdas operacionais.</p>
+      </article>
 
-        <div class="section" style="padding-bottom:0;">
-          <div class="cta">
-            <div>
-              <h2>Objetivos claros, execução controlada</h2>
-              <p>Conte o cenário e as restrições do site para definirmos a abordagem.</p>
-            </div>
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="./contato.html">Falar com especialista</a>
-              <a class="btn" href="./contato.html">Solicitar proposta</a>
-            </div>
-          </div>
+      <article class="sustain-card" role="listitem">
+        <div class="sustain-ico" aria-hidden="true">
+          <!-- vento/poeira -->
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M3 8h10a3 3 0 1 0-3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M3 12h14a3 3 0 1 1-3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M3 16h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
         </div>
+        <h3>Redução de poeira</h3>
+        <p>Controle de particulados em vias e pátios com foco em segurança e desempenho operacional.</p>
+      </article>
 
-      </div>
+      <article class="sustain-card" role="listitem">
+        <div class="sustain-ico" aria-hidden="true">
+          <!-- estrada/manutenção -->
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M8 21 10 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M16 21 14 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M10 8h4M9.5 12h5M9 16h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Menor manutenção de vias</h3>
+        <p>Estabilização e selagem para reduzir retrabalho e aumentar previsibilidade de conservação.</p>
+      </article>
+
+      <article class="sustain-card" role="listitem">
+        <div class="sustain-ico" aria-hidden="true">
+          <!-- escudo/conformidade -->
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M12 2 20 6v6c0 5-3.5 9-8 10C7.5 21 4 17 4 12V6l8-4Z"
+              stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M9 12l2 2 4-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Conformidade ambiental</h3>
+        <p>Redução de riscos e suporte à documentação técnica conforme critérios e auditorias.</p>
+      </article>
+
+      <article class="sustain-card" role="listitem">
+        <div class="sustain-ico" aria-hidden="true">
+          <!-- relatório/rastreio -->
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M8 3h8l3 3v15H8V3Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M16 3v5h5" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M10 12h7M10 16h7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Rastreamento operacional</h3>
+        <p>Registro e acompanhamento para apoiar decisões e continuidade de performance.</p>
+      </article>
+
+    </div>
+
+    <div class="section-actions sustain-actions">
+      <a class="btn btn-primary" href="./sustentabilidade.html">Ver detalhes</a>
+      <a class="btn btn-invert" href="./contato.html">Solicitar proposta</a>
+    </div>
+  </div>
     </section>
   </main>
 
@@ -98,7 +141,6 @@
           <strong style="color:#fff;">Menu</strong>
           <a href="./solucoes.html">Soluções</a>
           <a href="./aplicacoes.html">Aplicações</a>
-          <a href="./produtos.html">Produtos</a>
           <a href="./contato.html">Contato</a>
         </div>
 
